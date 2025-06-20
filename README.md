@@ -31,6 +31,7 @@ A smart, modern chatbot interface that helps users calculate how many tiles are 
 - **PDF Export**: JavaScript Blob
 - **Deployment**: Netlify (frontend) + Render.com (Ollama backend via Docker)
 
+---FEATURES 
   
  ### Voice Assistant
 - Click mic button 🎤
@@ -41,15 +42,25 @@ A smart, modern chatbot interface that helps users calculate how many tiles are 
 
 ### 🖼Matching Products
 - On calculation, shows tile suggestions (image, name, price, link)
-- Displayed on **right-side scroll tab**
+- Displayed on **chat container tab**
 
 ---
 
-### 📄 5. PDF Export
+### 📄 PDF Export
 - Click download button
 - Generates a text-based **PDF with tile estimate summary**
 
+  ---
+
+### 🖼️ Image Area Estimation
+
+- Upload an image (e.g. floor plan or room photo).
+- The chatbot uses Ollama + LLaVA to estimate area in square feet/meters.
+- Automatically extracts and inputs the estimated value into the conversation flow.
+- supports dynamic calculation without manual input.
+
 ---
+
 
 
 ## 📁 Project Structure
