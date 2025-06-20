@@ -67,8 +67,10 @@ A smart, modern chatbot interface that helps users calculate how many tiles are 
 
 You can deploy this project with the included `Dockerfile` and `.render.yaml`:
 
+                        
+                     [OR]
 
-## 🧪 Running Locally
+## 🧪 Running Locally 
 
 ### Requirements:
 - Ollama installed (or Docker container built)
