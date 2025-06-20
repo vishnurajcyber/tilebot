@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="data:,">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tile Calculator Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+  <header class="top-bar">
+  <div class="nav-left">
+    <a href="https://arqonz.com/">
+      <img src="https://www.arqonz.com/static/images/Logo-Arq.png" alt="ARQONZ Logo" class="logo" />
+    </a>
+  </div>
+  <div class="nav-center">
+    <a href="https://arqonz.com/">Home</a>
+    <a href="https://arqonz.com/calculator/tile-calculator#">Tools</a>
+  </div>
+  <div class="nav-right">
+    <a href="https://arqonz.com/account/sign-in">Login</a>
+    <a href="https://arqonz.com/account/register" class="signup-btn">Sign Up</a>
+  </div>
+</header>
+  <div class="chat-layout">
+  <div class="chat-container">
+    <div class="chat-header">
+      Arqonz TileBot
+      <label id="downloadBtn">📂</label>
+    </div>
+    <div class="chat-box" id="chatBox">
+      <div class="bot-message"> Hi! Are you looking for floor or wall tiles?</div>
+      <div class="quick-replies" id="tileTypeBtns">
+        <button onclick="handleReply('Floor')">Floor</button>
+        <button onclick="handleReply('Wall')">Wall</button>
+      </div>
+    </div>
+    <div class="chat-input-area">
+      <input type="file" id="fileUpload" accept="image/*" style="display: none" />
+      <button onclick="document.getElementById('fileUpload').click()">📎</button>
+      <button id="micBtn">🎙️</button>
+      <input type="text" id="userInput" placeholder="Type a message..." />
+      <button onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+  </div>
+  <div id="productCarousel" class="product-carousel"></div>
+</body>
+</html>
